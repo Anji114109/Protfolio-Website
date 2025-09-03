@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anji Reddy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Stars Background -->
+  <div id="stars"></div>
+
+  <!-- Transparent Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-code"></i> Projects</a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+      <li><a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h2 class="hero-name">Hello, I'm <span>Anji Reddy Ambati</span></h2>
+    <p class="hero-sub" id="typing-text"></p>
+    <img src="myphoto.jpg" alt="Profile" class="profile-pic">
+
+    <div class="links">
+      <a href="mailto:ambatianjireddy326@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://github.com/Anji114109" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/anjireddy-ambati-52276931b" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- Education -->
+  <section id="education">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+    <div class="container-col">
+      <div class="card">
+        <h3>B.Tech Computer Science</h3>
+        <p>Sagi Ramakrishnam Raju Engineering College</p>
+        <p><b>Period:</b> 2022–2026</p>
+        <p><b>CGPA:</b> 8.5</p>
+      </div>
+      <div class="card">
+        <h3>Intermediate (M.P.C)</h3>
+        <p>Sri Saraswathi Junior College</p>
+        <p><b>Period:</b> 2020–2022</p>
+        <p><b>CGPA:</b> 9.5</p>
+      </div>
+      <div class="card">
+        <h3>Class X</h3>
+        <p>S S UN Aided School</p>
+        <p><b>Period:</b> 2019–2020</p>
+        <p><b>CGPA:</b> 10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2><i class="fa-solid fa-code"></i> Projects</h2>
+    <div class="container-col">
+      <div class="card">
+        <h3>Hemoglobin Detection App</h3>
+        <ul>
+          <li>Developed a Flask-based web app to predict hemoglobin levels from fingertip images.</li>
+          <li>Applied image processing, PCA for feature extraction, and XGBoost for classification.</li>
+          <li>Displayed results with health suggestions in a user-friendly interface.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Medicine Reminder & Tracker</h3>
+        <ul>
+          <li>Built a MERN stack app to remind users to take their medicines on time.</li>
+          <li>Enabled scheduling, tracking, and history of medicine intake with user-friendly UI.</li>
+          <li>Implemented role-based login, data storage in MongoDB, and real-time status updates.</li>
+        </ul>
+        <button onclick="window.open('https://medical-tracker-ver11.vercel.app','_blank')">View</button>
+      </div>
+      <div class="card">
+        <h3>Charity Management System</h3>
+        <ul>
+          <li>Developed a web-based platform to manage donations and user roles.</li>
+          <li>Implemented secure login for Admin, Volunteers, and Users using PHP and MySQL.</li>
+          <li>Added features like charity listing, donation tracking, image uploads, and admin dashboard.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+    <div class="container-col">
+      <div class="card same-size">
+        <h3>Machine Learning Intern</h3>
+        <ul>
+          <li>Completed a Machine Learning internship at Blackbuck Engineers Pvt. Ltd.</li>
+          <li>Developed a predictive model for Titanic survival using ML concepts.</li>
+          <li>Used NumPy, Pandas, Scikit-learn, and Matplotlib for preprocessing, modeling, and visualization.</li>
+        </ul>
+        <button onclick="window.open('https://drive.google.com/file/d/1leTDwOnb5Pd_avDvKy0PgjxH8GN3_PzG/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+      <div class="card same-size">
+        <h3>Full Stack Intern (MERN)</h3>
+        <ul>
+          <li>Built dynamic web applications using the MERN stack.</li>
+          <li>Implemented authentication, CRUD operations, and responsive UI design.</li>
+          <li>Optimized database queries and performance with MongoDB Atlas and server best practices.</li>
+        </ul>
+        <button onclick="window.open('https://drive.google.com/file/d/1jXkF25Qe6hvgsqne5FKZmT3jbJ8TAoq8/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2><i class="fa-solid fa-laptop-code"></i> Technical Skills</h2>
+    <div class="container-col">
+      <div class="card">
+        <h3>Languages</h3>
+        <div class="skills-list">
+          <span><i class="fa-brands fa-cuttlefish"></i> C</span>
+          <span><i class="fa-brands fa-cuttlefish"></i> C++</span>
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-brands fa-java"></i> Java</span>
+          <span><i class="fa-brands fa-html5"></i> HTML</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Databases</h3>
+        <div class="skills-list">
+          <span><i class="fa-solid fa-database"></i> MongoDB</span>
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tools & Libraries</h3>
+        <div class="skills-list">
+          <span><i class="fa-brands fa-react"></i> ReactJS</span>
+          <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span><i class="fa-solid fa-code"></i> Pandas</span>
+          <span><i class="fa-solid fa-code"></i> NumPy</span>
+          <span><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span><i class="fa-solid fa-code"></i> VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+    <div class="container-col">
+      <div class="card same-size">Completed comprehensive training in web development, focusing on frontend and backend technologies.
+        <button onclick="window.open('https://drive.google.com/file/d/1f9VkTxNv0x5cYx_C8uzFH1-lF2ftzdEV/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+      <div class="card same-size">Actively participated in the technical festival Prajwalan 2025. 
+        <button onclick="window.open('https://drive.google.com/file/d/11s92L9BByuMVYZJc81kRHx8mtNLlQqEi/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+      <div class="card same-size">Learned database management, query writing, and data manipulation using SQL
+        <button onclick="window.open('https://drive.google.com/file/d/1yAvEjuyQO3bHjWaBaNffh_03HDWsNRPs/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+      <div class="card same-size">Gained strong foundational skills in Python through structured coursework. 
+        <button onclick="window.open('https://drive.google.com/file/d/17eoQi1dWCFPZwra80YxWHhszxL8Eed8p/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+      <div class="card same-size">Gained strong foundational skills in C++ through structured coursework.
+        <button onclick="window.open('https://drive.google.com/file/d/1wTqS5f6ZBhU0ISOkO5NimSU9jDxvjgKH/view?usp=drive_link','_blank')"><i class="fa-solid fa-file"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2><i class="fa-solid fa-address-book"></i> Contact</h2>
+    <div class="contact-list">
+      <p><i class="fa-solid fa-phone"></i> <a href="sms:+919346641922">+91-9346641922</a></p>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:ambatianjireddy326@gmail.com">ambatianjireddy326@gmail.com</a></p>
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Anji114109">GitHub</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/anjireddy-ambati-52276931b">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Anji Reddy Ambati. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
