@@ -5,6 +5,7 @@ const STAR_COUNT = 200;
 function addStars() {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
+  if (!starsContainer) return;
   starsContainer.innerHTML = '';
 
   for (let i = 0; i < STAR_COUNT; i++) {
@@ -65,25 +66,49 @@ if (hamburger) {
   );
 }
 
-// ------- Typing Animation -------
+// ------- Typing Animation (looping) -------
 const typingText = document.getElementById("typing-text");
-const text = "Computer Science and Engineering Student";
+const text = "Full Stack MERN Developer || Computer Science and Engineering "; // text to loop
 let index = 0;
-function typeEffect() {
-  if (index < text.length) {
-    typingText.textContent += text.charAt(index);
+let deleting = false;
+const typeSpeed = 90;
+const deleteSpeed = 40;
+const pauseAfterType = 1400;
+const pauseAfterDelete = 300;
+
+function typeLoop() {
+  if (!typingText) return;
+
+  if (!deleting) {
+    typingText.textContent = text.substring(0, index + 1);
     index++;
-    setTimeout(typeEffect, 100);
+    if (index === text.length) {
+      deleting = true;
+      setTimeout(typeLoop, pauseAfterType);
+      return;
+    }
+    setTimeout(typeLoop, typeSpeed);
+  } else {
+    typingText.textContent = text.substring(0, index - 1);
+    index--;
+    if (index === 0) {
+      deleting = false;
+      setTimeout(typeLoop, pauseAfterDelete);
+      return;
+    }
+    setTimeout(typeLoop, deleteSpeed);
   }
 }
 
 // ------- Init -------
 window.addEventListener('load', () => {
-  document.querySelector('.hero').classList.add('show');
-  typeEffect();
+  const hero = document.querySelector('.hero');
+  if (hero) hero.classList.add('show');
+  typeLoop();
   revealOnScroll();
   highlightNav();
 });
+
 window.addEventListener('scroll', () => {
   revealOnScroll();
   highlightNav();
